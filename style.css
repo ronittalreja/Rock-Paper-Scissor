@@ -1,0 +1,82 @@
+*{
+    background-color: black;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+}
+
+h1{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden; 
+    white-space: nowrap; 
+}
+
+
+
+#button-container {
+    height: 300px;
+    display: flex;
+    flex-direction: row; /* Arranges buttons in a column */
+    align-items: center; /* Centers buttons horizontally */
+    justify-content: space-around; /* Centers buttons vertically */
+    height: 60vh; /* Makes the container full viewport height */
+}
+
+button {
+    height: 250px;
+    width: 250px;
+    border: 10px solid rgb(249, 168, 69);
+  
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: cadetblue;
+    margin: 25px 0; /* Adds vertical margin between buttons */
+    transition: background-color 0.3s, height 0.3s, width 0.3s;
+}
+
+button img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+button:hover{
+    border: 10px solid red;
+    height: 300px;
+    width: 300px;
+}
+
+button:active{
+    border: 10px solid green;
+}
+
+#result-container {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#score-container{
+    font-size: 35px;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reset-score{
+    margin-left: 20px;
+    height: 30px;
+    width: 100px;
+    background-color: blue;
+    border: 1px solid white;
+    font-size: 15px;
+}
+
+#reset-score:hover{
+    background-color: grey;
+}
+
